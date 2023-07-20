@@ -171,3 +171,12 @@ var carrinhoDeCompras = {
 
 console.log(carrinhoDeCompras['produtos'][2]['fruits'][1])
 console.log(carrinhoDeCompras.produtos[2].fruits[1])
+
+// Create a object with the following properties
+// name
+// age
+// isTall
+// books
+
+// Create object for 3 persons in your life
+// Create a list of those people
