@@ -180,3 +180,73 @@ console.log(carrinhoDeCompras.produtos[2].fruits[1])
 
 // Create object for 3 persons in your life
 // Create a list of those people
+
+// for (var i=0;i<10;i++){
+// code to execute
+//}
+
+for (var i=0;i<=20;i++){
+    console.log("Number: "+i)
+}
+
+console.log('My Names:')
+var names = ['Dedu', 'Marco', 'Ines', 'Carlos']
+
+for (var i=0; i<names.length; i++){
+    console.log(names[i])
+}
+
+for (var i=0; i<names.length; i++){
+    // variavel local
+    var name = names[i]
+    console.log(name)
+}
+
+// For each
+for (var name of names){
+    console.log(name)
+}
+
+console.log('Ages')
+var ages = [10, 15, 20, 32, 40, 5]
+
+for (var i=0; i<ages.length; i++){
+    // local variables
+    var age = ages[i]
+
+    if(age >= 18){
+        console.log('Is an adult: '+age)
+    }else{
+        console.log('Is a under age: '+age)
+    }
+}
+
+
+var numbers = [10, 20, 5, 30, 40, 10, 9, 2]
+
+// Current Number > Max Number => New Max Number (maxNumber=currentNumber)
+// 10 > _ => 10
+// 20 > 10 => 20
+// 5  > 20 => 20
+// 30 > 20 => 30
+// 40 > 30 => 40
+// 10 > 40 => 40
+// 9  > 40 => 40
+// 2  > 40 -> 40
+
+var maxNumber = 0
+
+for (var i=0;i<numbers.length;i++){
+    
+    var currentNumber = numbers[i]
+
+    if(currentNumber>maxNumber){
+        maxNumber = currentNumber
+    }
+}
+
+console.log(maxNumber)
+
+// Exercise:
+// Iterate for the list of persons and write the names on the screen
+// Iterate for the list of persons and create a new list with only the tall people
